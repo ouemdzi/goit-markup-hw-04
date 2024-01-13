@@ -246,8 +246,7 @@ img {
   justify-content: center;
   margin-bottom: 8px;
 }
-
-.svg-item {
+.svg-item-adv {
   width: 64px;
   height: 64px;
 }
@@ -315,6 +314,36 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+/* ul */
+.socials {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* li */
+.socials-item {
+  margin-top: 8px;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-item:hover {
+  background-color: #31d0aa;
+}
+
+/* svg */
+.svg-item-soc {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
 }
 
 /* ==================PORTFOLIO======================= */
