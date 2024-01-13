@@ -375,6 +375,7 @@ img {
   width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .portfolio-item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -383,6 +384,35 @@ img {
 
 .portfolio-images {
   background-color: #ffffff;
+}
+
+.cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item:hover .wrap {
+  transform: translateY(0%);
+}
+
+.wrap {
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #4d5ae5;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+}
+.wrap-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .app-container {
@@ -412,6 +442,12 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  display: flex;
+}
+
+.footer-left {
+  margin-left: 156px;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -436,4 +472,28 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
+}
+
+.footer-social {
+  margin-left: 120px;
+}
+
+.media-title {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02px;
+  margin-bottom: 16px;
+}
+
+.media-list {
+  display: flex;
+  gap: 16px;
+}
+
+.svg-item-footer {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
 }
